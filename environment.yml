@@ -1,0 +1,26 @@
+name: tianjin-heat-risk
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - pillow
+  - seaborn
+  - rasterio
+  - geopandas
+  - pyproj
+  - shapely
+  - xarray
+  - netcdf4
+  - scikit-learn
+  - joblib
+  - shap
+  - xgboost
+  - pyyaml
+  - jupyterlab
+  - pytest
+  - pip
+

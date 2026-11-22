@@ -1,0 +1,14 @@
+# Copy to paths.local.toml to use your own data locations.
+# Relative paths are resolved from the repository root.
+[paths]
+study_root = "outputs/research_workspace"
+data_root = "data/external"
+boundary = "data/external/boundaries/tianjin.shp"
+land_cover = "data/external/land_cover/CLCD_v01_2021_albert_tianjin.tif"
+
+[fonts]
+# Leave empty to select an installed font automatically.
+# Chinese map labels need an installed Chinese font, e.g. Noto Sans CJK SC.
+chinese = ""
+english = ""
+

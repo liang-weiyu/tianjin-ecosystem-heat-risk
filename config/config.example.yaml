@@ -1,0 +1,41 @@
+# Future pipeline design only; current scripts use paths.example.toml.
+# Copy this file to config/config.local.yaml and replace the placeholder paths.
+# config.local.yaml is ignored by Git.
+
+project:
+  random_seed: 20260815
+  n_jobs: -1
+  nodata_float: -9999.0
+
+paths:
+  data_root: "D:/path/to/tianjin-heat-risk-data"
+  output_root: "D:/path/to/tianjin-heat-risk-outputs"
+  model_table: "D:/path/to/background_driver_model_table.csv"
+  risk_raster: "D:/path/to/ecosystem_heat_risk_1km.tif"
+  boundary: "D:/path/to/tianjin_boundary.gpkg"
+  coastline: "D:/path/to/coastline.gpkg"
+
+spatial_analysis:
+  permutations: 9999
+  fdr_alpha: 0.05
+  contiguity: "queen"
+  distance_bin_km: 2.0
+  maximum_distance_km: 60.0
+
+global_random_forest:
+  target: "R"
+  spatial_block_size_km: 10
+  outer_folds: 5
+  repeated_assignments: 10
+
+shap:
+  background_sample_size: 1000
+  bootstrap_replicates: 500
+
+gwrf:
+  kernel: "bisquare"
+  adaptive_bandwidth_candidates: [100, 200, 300, 400, 500]
+  selected_bandwidth: 300
+  local_weight: 0.5
+  n_estimators: 300
+

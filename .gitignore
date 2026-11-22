@@ -1,0 +1,121 @@
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Virtual environments and local runtimes
+.venv/
+venv/
+env/
+.conda/
+.python_packages/
+.jupyter_runtime/
+.ipynb_checkpoints/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local configuration and credentials
+config/config.local.yaml
+config/config.local.yml
+config/config.local.json
+config/paths.local.toml
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.yaml
+secrets*.yml
+
+# Logs, caches, checkpoints, and serialized models
+logs/
+cache/
+tmp/
+temp/
+checkpoints/
+models/
+*.log
+*.tmp
+*.bak
+*.joblib
+*.pkl
+*.pickle
+*.npz
+*.npy
+
+# Raw, external, intermediate, and processed data are kept outside Git.
+# Keep documentation and deliberately prepared sample data.
+data/*
+!data/README.md
+!data/sample/
+!data/sample/**
+
+# Generated outputs are ignored by default. Curate small release artifacts
+# explicitly under outputs/figures or outputs/tables when they are ready.
+outputs/*
+!outputs/README.md
+!outputs/figures/
+!outputs/figures/**
+!outputs/tables/
+!outputs/tables/**
+
+# Common generated geospatial/scientific files. Small licensed examples may be
+# force-added only after reviewing size, contents, and redistribution rights.
+*.tif
+*.tiff
+*.nc
+*.nc4
+*.hdf
+*.h5
+*.hdf5
+*.grd
+*.img
+*.vrt
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.qmd
+*.aux.xml
+
+# Archives and large binary documents
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.gz
+*.doc
+*.docx
+*.ppt
+*.pptx
+
+# High-resolution working figures are generated locally. Curated PNG/PDF/SVG
+# outputs in outputs/ remain eligible for version control.
+*.psd
+*.ai
+
