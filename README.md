@@ -47,28 +47,15 @@ factor that dominates a cell is not necessarily associated with a high risk leve
 The original figure labels are in Chinese. English descriptions and a legend
 translation are provided in the [figure guide](outputs/figures/README.md).
 
-## Predictive performance
+## Model evaluation
 
-The following are existing research results under five-fold spatial-block
-cross-validation with 10 km blocks and ten repeated fold assignments. They
-have not been recomputed after the code was relocated.
+The research workflow compares linear regression, SVR, XGBoost, global RF,
+local GWRF and combined global/local predictions using repeated spatial-block
+cross-validation. Evaluation includes R², RMSE and MAE to examine predictive
+performance across spatially separated folds.
 
-| Model | Mean R² | Mean RMSE | Mean MAE |
-|---|---|---|---|
-| Linear regression | 0.299 | 0.01202 | 0.00855 |
-| SVR | 0.419 | 0.01093 | 0.00738 |
-| XGBoost | 0.448 | 0.01065 | 0.00725 |
-| Global RF | 0.453 | 0.01061 | 0.00721 |
-| Local GWRF | 0.443 | 0.01070 | 0.00719 |
-| Combined GWRF | 0.473 | 0.01042 | 0.00698 |
-
-Combining global and local predictions produced a modest increase in mean R²
-of approximately 0.020 over global RF. The purely local model did not outperform
-global RF in R² or RMSE. These results motivate examining where local
-relationships help, while recognising that substantial predictive variation
-remains unexplained. No claim of statistical significance is made for this gain.
-
-See [research highlights and result provenance](docs/research_highlights.md).
+This portfolio focuses on the analysis workflow and spatial interpretation.
+The complete analysis has not been rerun after the code was relocated.
 
 ## Research questions
 
